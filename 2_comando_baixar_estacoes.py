@@ -3,7 +3,8 @@ import requests
 from io import BytesIO
 from zipfile import BadZipFile, ZipFile
 
-# Este código utiliza a função download que pode ser obtida no link:(https://github.com/joaohuf/Ferramentas_HidroWeb)
+# Este código utiliza a função (download_dados_hidroweb_2.py) que pode ser obtida no link:(https://github.com/joaohuf/Ferramentas_HidroWeb)
+# Caso queira ir direto para o codigo, olhe a partir da linha 62.
 
 # Link onde estão os dados das estações convencionais
 BASE_URL = 'http://www.snirh.gov.br/hidroweb/rest/api/documento/convencionais'
@@ -57,10 +58,6 @@ def unzip_station_data(station_raw_data, dir, tipo_especifico):
     except BadZipFile:
         print('Sem nenhum .zip')
 
-
-
-        
-        
         
 #Carrega a lista das estações da bacia do Iguaçu contida em Coords_Bruto.txt obtida no arquivo (1_comando_selecao_da_bacia.py)
 f = '.../Coords_Bruto.txt'
