@@ -6,8 +6,8 @@ from shapely.geometry import Point
 #   Este codigo irá ler o arquivo tipo shapefile da bacia do iguaçu, e irá ver quais estaçõs da relação nacional estão na bacia do iguaçu e por fim irá criar 
 # Coords_Bruto.txt com a relação de todas as estações da bacia do iguaçu.
 
-f_shps = '/home/seb/Projeto-iguacu/Contorno/Bacia_do_iguacu.shp'
-f_coords = '/home/seb/Projeto-iguacu/relacao_estacoes_HidroWeb.txt'
+f_shps = '.../Contorno/Bacia_do_iguacu.shp'
+f_coords = '.../relacao_estacoes_HidroWeb.txt'
 
 #Cria um geodataframe com o a base de dados nacional.
 dt_coords = pd.read_csv(f_coords, '\t')
