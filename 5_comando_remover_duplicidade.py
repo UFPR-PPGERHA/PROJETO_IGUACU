@@ -6,6 +6,8 @@ import shutil
 
 #   Este código irá tratar dos casos de duplicidade, isso acontece quando duas estações tem coordenadas iguais. O código irá juntar os 2 arquivos em 1.
 
+#   Este código utiliza a função (concat_dataframes_hidroweb), que pode ser obtida em: (https://github.com/joaohuf/)
+
 def concat_dataframes_hidroweb(list_dts):
     dts_1, dts_2 = [], []
     for i in range(len(list_dts)):
@@ -42,7 +44,7 @@ def concat_dataframes_hidroweb(list_dts):
     dt.columns = ['Nivel_Consistencia', name[0]]
     return dt
 
-
+# Este codigo funcionando apenas para vazoes, chuvas e nivel
 
 f = ['.../Coords_Vazoes.txt',
      '.../Coords_Chuvas.txt',
@@ -51,8 +53,6 @@ f = ['.../Coords_Vazoes.txt',
 cod_home = ['.../Vazoes/vazoes_T_',
             '.../Chuvas/chuvas_T_0',
             '.../Nivel/cotas_T_']
-
-# Este codigo funcionando apenas para vazoes, chuvas e nivel
 
 dir_save = ['.../Resultados_Uniao/Vazao/',
             '.../Resultados_Uniao/Chuva/',
@@ -84,7 +84,7 @@ for i in range(3):
             else:
                 name = (cod_home[i].split('/')[-1][:-1])
             cod_novo = ''
-            for cod_intersecao in dt_intersecao.index.to_list(): #Caso tenha intercessão ele entrara nesse for, caso contrario não entrará.
+            for cod_intersecao in dt_intersecao.index.to_list():        #Caso tenha intercessão ele entrara nesse for, caso contrario não entrará.
                 #Nesta parte ele trata do novo nome do arquivo .txt, tendo cuidado para o caso de ter 3 ou mais arquivos, e tratando da peculiaridade dos dados da chuva
                 if (i==1):
                     cod_novo = cod_novo + '_0' + str(cod_intersecao)
