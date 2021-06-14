@@ -47,7 +47,6 @@ def concat_dataframes_hidroweb(list_dts):
 f = ['.../Coords_Vazoes.txt',
      '.../Coords_Chuvas.txt',
      '.../Coords_Nivel.txt']
-#f = "C:\\Users\\Joao\\Dropbox\\Scripts\\Python\\s3_joao\\relacao_estacoes_HidroWeb.txt"
 
 cod_home = ['.../Vazoes/vazoes_T_',
             '.../Chuvas/chuvas_T_0',
