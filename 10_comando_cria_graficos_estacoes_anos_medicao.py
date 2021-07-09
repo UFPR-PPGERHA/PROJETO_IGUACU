@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #   O objetivo deste código é gerar gráficos que analisem a completude do banco de dados, criando 10 gráficos, analisando a cada 5 anos, de 5 até 55 anos,
 # o número de estações com medições presentes, com 10 medidas de proporção de amostras durante o ano, interando em 10%, de 10% até 90%.
 
-# Primeiro bloco carrega o dataframe, podendo ser um dos 3 tipos, obrigatóriamente com medida anual, podendo ser obtida no codigo:
+# Primeiro bloco carrega o dataframe, podendo ser um dos 3 tipos, obrigatóriamente com medida anual, podendo ser obtida no codigo: 7_comando_cria_tabelas_estatisticas.py
 
 #f = ".../Vazao_count.txt"
 #cores = 'Greens'
