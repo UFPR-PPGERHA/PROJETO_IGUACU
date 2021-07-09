@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# A função deste código é gerar um gráfico para analisar como está a disposição das amostras obtidas.
+# A função deste código é gerar um gráfico para analisar como está a disposição das amostras obtidas por ano.
 
 # Carregando os dataframes a partir de um arquivo [TIPO]_count.txt obtido em 7_comando_cria_tabelas_estatisticas.py
 
