@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 
 # Carregando os dataframes a partir de um arquivo [TIPO]_count.txt obtido em 7_comando_cria_tabelas_estatisticas.py
 
-
 list_dts = []
 f = ".../Chuva_count.txt"
 
