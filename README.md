@@ -1,5 +1,5 @@
 # Projeto_iguacu
-Códigos utilizados no desenvolvimento de um bando de dados da Bacia do Iguaçu.
+Códigos utilizados no desenvolvimento de um banco de dados da Bacia do Iguaçu.
 
 Códigos desenvolvidos por alunos da Universidade Federal do Paraná.
 
